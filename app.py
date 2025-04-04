@@ -12,8 +12,8 @@ HF_API_KEY = os.getenv("HF_API_KEY")  # Ensure the API key is set
 def home():
     return "Welcome to the chatbot API!"
 
-@app.route("/chatbot", methods=["POST"])
-def chatbot():
+@app.route("/chat", methods=["POST"])
+def chat():
     # Ensure JSON data is received properly
     data = request.get_json()
     
